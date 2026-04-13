@@ -233,13 +233,13 @@ nav.scrolled{background:var(--bg);box-shadow:0 2px 20px rgba(0,0,0,.3);padding:.
 .social-row a svg{width:18px;height:18px}
 @media(max-width:1024px){
   .artist-hero{grid-template-columns:1fr;gap:2rem;text-align:center}
-  .artist-photo img{height:400px;object-position:top}
+  .artist-photo img{height:600px;object-position:top}
   .artist-content .brand-name{font-size:3rem}
   .social-row{justify-content:center}
 }
 @media(max-width:768px){
   .artist-hero{grid-template-columns:1fr;gap:2rem;text-align:center}
-  .artist-photo img{height:350px;object-position:top}
+  .artist-photo img{height:500px;object-position:top}
   .artist-content .brand-name{font-size:2.5rem}
   .social-row{justify-content:center}
 }
@@ -512,12 +512,14 @@ footer{padding:80px 0 40px;background:#0D0D0D;border-top:1px solid rgba(230,57,7
 .h2-projects-grid .h2-project-card:not(.h2-project-large){min-height:260px}
 @media(max-width:1024px){
   .h2-projects-grid{grid-template-columns:1fr;gap:1.5rem}
-  .h2-project-large{grid-row:span 1;min-height:400px}
+  .h2-project-card{min-height:420px}
+  .h2-project-large{grid-row:span 1;min-height:520px}
   .h2-project-info{opacity:1!important;transform:translateY(0)!important}
 }
 @media(max-width:768px){
   .h2-projects-grid{grid-template-columns:1fr;grid-template-rows:auto}
-  .h2-project-large{grid-row:span 1;min-height:350px}
+  .h2-project-card{min-height:380px}
+  .h2-project-large{grid-row:span 1;min-height:480px}
   .h2-project-info{opacity:1!important;transform:translateY(0)!important}
 }
 
@@ -570,13 +572,13 @@ footer{padding:80px 0 40px;background:#0D0D0D;border-top:1px solid rgba(230,57,7
 .h2-bts-text p{font-size:1rem;color:var(--fg);opacity:.7;line-height:1.75}
 @media(max-width:1024px){
   .h2-bts-item{grid-template-columns:1fr;gap:1.5rem}
-  .h2-bts-img img{height:300px}
+  .h2-bts-img img{height:450px}
 }
 @media(max-width:768px){
   .h2-bts-item{grid-template-columns:1fr;gap:1.5rem}
   .h2-bts-reverse .h2-bts-img{order:0}
   .h2-bts-reverse .h2-bts-text{order:0}
-  .h2-bts-img img{height:250px}
+  .h2-bts-img img{height:400px}
 }
 
 /* -- Collaboration CTA -- */
@@ -596,5 +598,5 @@ footer{padding:80px 0 40px;background:#0D0D0D;border-top:1px solid rgba(230,57,7
   .h2-collab-inner{grid-template-columns:1fr;gap:2rem}
   .h2-collab-text h2{text-align:center}
   .h2-collab-btns{justify-content:center}
-  .h2-collab-img img{height:280px}
+  .h2-collab-img img{height:380px}
 }
