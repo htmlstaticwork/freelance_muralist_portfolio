@@ -1729,7 +1729,7 @@ nav:not(.scrolled) .nav-dropdown>a::after {
 
 .svc-overview img {
   width: 100%;
-  height: 350px;
+  height: 480px;
   object-fit: cover;
   border-radius: var(--radius)
 }
@@ -1740,7 +1740,7 @@ nav:not(.scrolled) .nav-dropdown>a::after {
   }
 
   .svc-overview img {
-    height: 250px
+    height: 500px
   }
 }
 
