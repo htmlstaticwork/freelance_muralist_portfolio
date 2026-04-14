@@ -73,26 +73,21 @@ nav.scrolled{background:var(--bg);box-shadow:0 2px 20px rgba(0,0,0,.3);padding:.
 .nav-links>li>a{font-weight:500;font-size:.9rem;color:var(--text);opacity:.85}
 .nav-links>li>a:hover{opacity:1;color:var(--red)}
 
-/* Enforce contrast when nav is over dark hero (not scrolled) - Only in Dark Mode */
-[data-theme="dark"] nav:not(.scrolled) .nav-links > li > a,
-[data-theme="dark"] nav:not(.scrolled) .nav-dropdown > a,
-[data-theme="dark"] nav:not(.scrolled) .toggle-btn {
-  color: #fff;
+/* Enforce light contrast when nav is over dark hero (not scrolled) - Applied to both themes */
+nav:not(.scrolled) .nav-links > li > a,
+nav:not(.scrolled) .nav-dropdown > a,
+nav:not(.scrolled) .toggle-btn,
+nav:not(.scrolled) .hamburger span {
+  color: #fff !important;
   opacity: 1;
 }
-[data-theme="dark"] nav:not(.scrolled) .nav-dropdown > a::after {
-  border-top-color: #fff;
+nav:not(.scrolled) .hamburger span {
+  background: #fff !important;
+}
+nav:not(.scrolled) .nav-dropdown > a::after {
+  border-top-color: #fff !important;
 }
 
-[data-theme="light"] nav:not(.scrolled) .nav-links > li > a,
-[data-theme="light"] nav:not(.scrolled) .nav-dropdown > a,
-[data-theme="light"] nav:not(.scrolled) .toggle-btn {
-  color: var(--text);
-  opacity: .95;
-}
-[data-theme="light"] nav:not(.scrolled) .nav-dropdown > a::after {
-  border-top-color: var(--text);
-}
 
 /* Services Dropdown */
 .nav-dropdown{position:relative}
@@ -154,12 +149,16 @@ nav.scrolled{background:var(--bg);box-shadow:0 2px 20px rgba(0,0,0,.3);padding:.
 .stagger-up:nth-child(3){animation-delay:.3s}
 .stagger-up:nth-child(4){animation-delay:.45s}
 @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
-@media(max-width:768px){
+@media(max-width:1024px){
   .hero-split{grid-template-columns:1fr;min-height:auto;gap:2rem}
-  .hero-text{padding:3rem 1.5rem;text-align:center}
+  .hero-text{padding:4rem 2rem 2rem;text-align:center}
   .hero-text h1{text-align:center;margin-bottom:1.5rem}
   .hero-text p{margin:0 auto 2rem}
   .hero-text .hero-ctas{justify-content:center;margin-bottom:1rem}
+  .hero-image{height:60vh}
+}
+@media(max-width:768px){
+  .hero-text{padding:3rem 1.5rem 2rem}
   .hero-image{height:50vh}
 }
 
