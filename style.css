@@ -2668,6 +2668,10 @@ footer {
     min-height: 420px
   }
 
+  .h2-projects-grid .h2-project-card:nth-of-type(3) {
+    min-height: 520px;
+  }
+
   .h2-project-large {
     grid-row: span 1;
     min-height: 520px
@@ -2687,6 +2691,10 @@ footer {
 
   .h2-project-card {
     min-height: 480px
+  }
+
+  .h2-projects-grid .h2-project-card:nth-of-type(2) {
+    min-height: 580px;
   }
 
   .h2-project-large {
